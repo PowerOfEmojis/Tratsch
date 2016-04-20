@@ -14,8 +14,8 @@ class TratschTests: XCTestCase {
     let tratsch = Tratsch()
     
     func testExample() {
-        let emoji = tratsch.emoji(forWord: "cat")
-        print(emoji?.unicode)
+        let emoji = tratsch.emoji(forWord: "dog")
+        XCTAssert(emoji!.unicode == "🐶")
     }
 
     func testPerformanceExample() {
