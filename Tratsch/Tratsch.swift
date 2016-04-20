@@ -16,8 +16,18 @@ class Tratsch {
         emojis = parse()
     }
 
-    func test() -> [Emoji] {
-        return parse()
+    func emoji(forWord word: String) -> Emoji? {
+        assert(!word.characters.contains(" "), "Can not handle mutliple words 💔")
+
+        for emoji in emojis {
+            if emoji.name == word.lowercaseString || emoji.keywords.contains(word.lowercaseString) {
+                // Yeah, we found something 💪
+                return emoji
+            }
+        }
+
+        // Nothing found 😞
+        return nil
     }
 
 }

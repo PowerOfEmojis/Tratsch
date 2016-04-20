@@ -14,13 +14,12 @@ class TratschTests: XCTestCase {
     let tratsch = Tratsch()
     
     func testExample() {
-        let emojis = tratsch.test()
-        print(emojis)
+        let emoji = tratsch.emoji(forWord: "cat")
+        print(emoji?.unicode)
     }
-    
+
     func testPerformanceExample() {
         self.measureBlock {
-            Tratsch().test()
         }
     }
     
