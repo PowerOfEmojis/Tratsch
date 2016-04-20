@@ -1,0 +1,400 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BEA4533D1CC797AE00273D14 /* Tratsch.h in Headers */ = {isa = PBXBuildFile; fileRef = BEA4533C1CC797AE00273D14 /* Tratsch.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BEA453441CC797AE00273D14 /* Tratsch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEA453391CC797AE00273D14 /* Tratsch.framework */; };
+		BEA453491CC797AE00273D14 /* TratschTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA453481CC797AE00273D14 /* TratschTests.swift */; };
+		BEA453541CC797D400273D14 /* Tratsch.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA453531CC797D400273D14 /* Tratsch.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BEA453451CC797AE00273D14 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BEA453301CC797AE00273D14 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BEA453381CC797AE00273D14;
+			remoteInfo = Tratsch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BEA453391CC797AE00273D14 /* Tratsch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Tratsch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEA4533C1CC797AE00273D14 /* Tratsch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tratsch.h; sourceTree = "<group>"; };
+		BEA4533E1CC797AE00273D14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEA453431CC797AE00273D14 /* TratschTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TratschTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEA453481CC797AE00273D14 /* TratschTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TratschTests.swift; sourceTree = "<group>"; };
+		BEA4534A1CC797AE00273D14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEA453531CC797D400273D14 /* Tratsch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tratsch.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BEA453351CC797AE00273D14 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEA453401CC797AE00273D14 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEA453441CC797AE00273D14 /* Tratsch.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BEA4532F1CC797AE00273D14 = {
+			isa = PBXGroup;
+			children = (
+				BEA4533B1CC797AE00273D14 /* Tratsch */,
+				BEA453471CC797AE00273D14 /* TratschTests */,
+				BEA4533A1CC797AE00273D14 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BEA4533A1CC797AE00273D14 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BEA453391CC797AE00273D14 /* Tratsch.framework */,
+				BEA453431CC797AE00273D14 /* TratschTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BEA4533B1CC797AE00273D14 /* Tratsch */ = {
+			isa = PBXGroup;
+			children = (
+				BEA4533C1CC797AE00273D14 /* Tratsch.h */,
+				BEA4533E1CC797AE00273D14 /* Info.plist */,
+				BEA453531CC797D400273D14 /* Tratsch.swift */,
+			);
+			path = Tratsch;
+			sourceTree = "<group>";
+		};
+		BEA453471CC797AE00273D14 /* TratschTests */ = {
+			isa = PBXGroup;
+			children = (
+				BEA453481CC797AE00273D14 /* TratschTests.swift */,
+				BEA4534A1CC797AE00273D14 /* Info.plist */,
+			);
+			path = TratschTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		BEA453361CC797AE00273D14 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEA4533D1CC797AE00273D14 /* Tratsch.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		BEA453381CC797AE00273D14 /* Tratsch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BEA4534D1CC797AE00273D14 /* Build configuration list for PBXNativeTarget "Tratsch" */;
+			buildPhases = (
+				BEA453341CC797AE00273D14 /* Sources */,
+				BEA453351CC797AE00273D14 /* Frameworks */,
+				BEA453361CC797AE00273D14 /* Headers */,
+				BEA453371CC797AE00273D14 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tratsch;
+			productName = Tratsch;
+			productReference = BEA453391CC797AE00273D14 /* Tratsch.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		BEA453421CC797AE00273D14 /* TratschTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BEA453501CC797AE00273D14 /* Build configuration list for PBXNativeTarget "TratschTests" */;
+			buildPhases = (
+				BEA4533F1CC797AE00273D14 /* Sources */,
+				BEA453401CC797AE00273D14 /* Frameworks */,
+				BEA453411CC797AE00273D14 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BEA453461CC797AE00273D14 /* PBXTargetDependency */,
+			);
+			name = TratschTests;
+			productName = TratschTests;
+			productReference = BEA453431CC797AE00273D14 /* TratschTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BEA453301CC797AE00273D14 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Power Of Emojis";
+				TargetAttributes = {
+					BEA453381CC797AE00273D14 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					BEA453421CC797AE00273D14 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = BEA453331CC797AE00273D14 /* Build configuration list for PBXProject "Tratsch" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = BEA4532F1CC797AE00273D14;
+			productRefGroup = BEA4533A1CC797AE00273D14 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BEA453381CC797AE00273D14 /* Tratsch */,
+				BEA453421CC797AE00273D14 /* TratschTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BEA453371CC797AE00273D14 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEA453411CC797AE00273D14 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BEA453341CC797AE00273D14 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEA453541CC797D400273D14 /* Tratsch.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEA4533F1CC797AE00273D14 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEA453491CC797AE00273D14 /* TratschTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BEA453461CC797AE00273D14 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BEA453381CC797AE00273D14 /* Tratsch */;
+			targetProxy = BEA453451CC797AE00273D14 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		BEA4534B1CC797AE00273D14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BEA4534C1CC797AE00273D14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BEA4534E1CC797AE00273D14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Tratsch/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.powerofemojis.Tratsch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BEA4534F1CC797AE00273D14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Tratsch/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.powerofemojis.Tratsch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		BEA453511CC797AE00273D14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TratschTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.powerofemojis.TratschTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BEA453521CC797AE00273D14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = TratschTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.powerofemojis.TratschTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BEA453331CC797AE00273D14 /* Build configuration list for PBXProject "Tratsch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEA4534B1CC797AE00273D14 /* Debug */,
+				BEA4534C1CC797AE00273D14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BEA4534D1CC797AE00273D14 /* Build configuration list for PBXNativeTarget "Tratsch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEA4534E1CC797AE00273D14 /* Debug */,
+				BEA4534F1CC797AE00273D14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BEA453501CC797AE00273D14 /* Build configuration list for PBXNativeTarget "TratschTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEA453511CC797AE00273D14 /* Debug */,
+				BEA453521CC797AE00273D14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BEA453301CC797AE00273D14 /* Project object */;
+}
