@@ -12,8 +12,8 @@ typealias Payload = [AnyObject]
 typealias JSON    = [String : AnyObject]
 
 class Tratsch {
-
-    var emojis = [Emoji]()
+    private let symbols = "!\"#$%&\'()*+,-./:;<=>?@[]^_`{|}~"
+    private var emojis  = [Emoji]()
 
     init() {
         emojis = parse()
@@ -23,7 +23,19 @@ class Tratsch {
         assert(!word.characters.contains(" "), "Can not handle mutliple words 💔")
 
         for emoji in emojis {
-            if emoji.name == word.lowercaseString || emoji.keywords.contains(word.lowercaseString) {
+            if emoji.translatable(word) {
+                // Yeah, we found something 💪
+                return emoji
+            }
+
+            // Singular
+            if (word.characters.last == "s") || emoji.translatable(word.removeLastCharacter()) {
+                // Yeah, we found something 💪
+                return emoji
+            }
+
+            // Plural
+            if emoji.translatable(word + "s") {
                 // Yeah, we found something 💪
                 return emoji
             }
@@ -38,6 +50,7 @@ class Tratsch {
         let words = text.characters.split(" ").map(String.init)
 
         for word in words {
+
             if let emoji = emoji(forWord: word) {
                 translatedText.appendContentsOf(emoji.unicode)
             } else {

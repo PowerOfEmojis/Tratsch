@@ -18,6 +18,13 @@ class TratschTests: XCTestCase {
         XCTAssert(emoji!.unicode == "🐶")
     }
 
+    func textTranslatePlural() {
+        let singularEmoji = tratsch.emoji(forWord: "dog")
+        let pluralEmoji   = tratsch.emoji(forWord: "dogs")
+
+        XCTAssert(singularEmoji!.unicode == pluralEmoji!.unicode)
+    }
+
     func testTranslateText() {
         let translatedText = tratsch.translate("I love my cat and your dog")
         print(translatedText)

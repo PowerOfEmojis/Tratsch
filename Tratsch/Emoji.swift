@@ -31,4 +31,8 @@ struct Emoji {
         self.category = category
         self.keywords = keywords
     }
+
+    func translatable(word: String) -> Bool {
+        return name == word.lowercaseString || keywords.contains(word.lowercaseString)
+    }
 }
