@@ -14,7 +14,8 @@ class TratschTests: XCTestCase {
     let tratsch = Tratsch()
     
     func testExample() {
-        tratsch.test()
+        let emojis = tratsch.test()
+        print(emojis)
     }
     
     func testPerformanceExample() {

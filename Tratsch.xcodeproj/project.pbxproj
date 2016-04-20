@@ -11,7 +11,9 @@
 		BEA453441CC797AE00273D14 /* Tratsch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEA453391CC797AE00273D14 /* Tratsch.framework */; };
 		BEA453491CC797AE00273D14 /* TratschTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA453481CC797AE00273D14 /* TratschTests.swift */; };
 		BEA453541CC797D400273D14 /* Tratsch.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA453531CC797D400273D14 /* Tratsch.swift */; };
-		BEA4535D1CC7A49400273D14 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEA4535C1CC7A49400273D14 /* Media.xcassets */; };
+		BEA453601CC7AB8700273D14 /* Emoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA4535F1CC7AB8700273D14 /* Emoji.swift */; };
+		BEA453621CC7AD5300273D14 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEA453611CC7AD5300273D14 /* Media.xcassets */; };
+		BEA453641CC7B10100273D14 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEA453631CC7B10100273D14 /* JSON.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,7 +34,9 @@
 		BEA453481CC797AE00273D14 /* TratschTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TratschTests.swift; sourceTree = "<group>"; };
 		BEA4534A1CC797AE00273D14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BEA453531CC797D400273D14 /* Tratsch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tratsch.swift; sourceTree = "<group>"; };
-		BEA4535C1CC7A49400273D14 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		BEA4535F1CC7AB8700273D14 /* Emoji.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Emoji.swift; sourceTree = "<group>"; };
+		BEA453611CC7AD5300273D14 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		BEA453631CC7B10100273D14 /* JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,10 +79,12 @@
 		BEA4533B1CC797AE00273D14 /* Tratsch */ = {
 			isa = PBXGroup;
 			children = (
+				BEA453631CC7B10100273D14 /* JSON.swift */,
+				BEA4535F1CC7AB8700273D14 /* Emoji.swift */,
 				BEA453531CC797D400273D14 /* Tratsch.swift */,
 				BEA4533C1CC797AE00273D14 /* Tratsch.h */,
 				BEA4533E1CC797AE00273D14 /* Info.plist */,
-				BEA4535C1CC7A49400273D14 /* Media.xcassets */,
+				BEA453611CC7AD5300273D14 /* Media.xcassets */,
 			);
 			path = Tratsch;
 			sourceTree = "<group>";
@@ -183,7 +189,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BEA4535D1CC7A49400273D14 /* Media.xcassets in Resources */,
+				BEA453621CC7AD5300273D14 /* Media.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,6 +207,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEA453641CC7B10100273D14 /* JSON.swift in Sources */,
+				BEA453601CC7AB8700273D14 /* Emoji.swift in Sources */,
 				BEA453541CC797D400273D14 /* Tratsch.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
