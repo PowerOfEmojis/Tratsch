@@ -13,9 +13,14 @@ class TratschTests: XCTestCase {
 
     let tratsch = Tratsch()
     
-    func testExample() {
+    func testTranslateSingleWord() {
         let emoji = tratsch.emoji(forWord: "dog")
         XCTAssert(emoji!.unicode == "🐶")
+    }
+
+    func testTranslateText() {
+        let translatedText = tratsch.translate("I love my cat and your dog")
+        print(translatedText)
     }
 
     func testPerformanceExample() {

@@ -33,6 +33,25 @@ class Tratsch {
         return nil
     }
 
+    func translate(text: String) -> String {
+        var translatedText = ""
+        let words = text.characters.split(" ").map(String.init)
+
+        for word in words {
+            if let emoji = emoji(forWord: word) {
+                translatedText.appendContentsOf(emoji.unicode)
+            } else {
+                translatedText.appendContentsOf(word)
+            }
+
+            if word != words.last {
+                translatedText.appendContentsOf(" ")
+            }
+        }
+
+        return translatedText
+    }
+
 }
 
 // MARK: Parsing
