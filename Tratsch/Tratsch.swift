@@ -8,6 +8,9 @@
 
 import Foundation
 
+typealias Payload = [AnyObject]
+typealias JSON    = [String : AnyObject]
+
 class Tratsch {
 
     var emojis = [Emoji]()
