@@ -54,9 +54,10 @@ class Tratsch {
         let words = text.characters.split(" ").map(String.init)
 
         for word in words {
-            var lastSymbol:  Character?
+            var lastSymbol: Character?
             var symbolFreeWord = word
 
+            // Handle Symbols
             for symbol in symbols.characters {
                 if let firstChar = word.characters.first where firstChar == symbol {
                     symbolFreeWord = word.dropFirst()
@@ -69,16 +70,19 @@ class Tratsch {
                 }
             }
 
+            // Translate Word
             if let emoji = emoji(forWord: symbolFreeWord) {
                 translatedText.appendContentsOf(emoji.unicode)
             } else {
                 translatedText.appendContentsOf(symbolFreeWord)
             }
 
+            // Append symbols
             if lastSymbol != nil {
                 translatedText.append(lastSymbol!)
             }
 
+            // Append whitespace
             if word != words.last {
                 translatedText.appendContentsOf(" ")
             }
