@@ -8,8 +8,12 @@
 
 extension String {
 
-    func removeLastCharacter() -> String {
-        return substringToIndex(characters.endIndex.advancedBy(-1))
+    func dropLast() -> String {
+        return String(characters.dropLast())
+    }
+
+    func dropFirst() -> String {
+        return String(characters.dropFirst())
     }
 
 }

@@ -10,7 +10,6 @@ import XCTest
 @testable import Tratsch
 
 class TratschTests: XCTestCase {
-
     let tratsch = Tratsch()
     
     func testTranslateSingleWord() {
@@ -26,8 +25,15 @@ class TratschTests: XCTestCase {
     }
 
     func testTranslateText() {
-        let translatedText = tratsch.translate("I love my cat and your dog")
-        print(translatedText)
+        let translatedText = tratsch.translate("I love cats and dogs")
+
+        XCTAssert(translatedText == "I 😍 😺 and 🐶")
+    }
+
+    func testTranslateTextWithSymbols() {
+        let translatedText = tratsch.translate("I love cats and dogs.")
+
+        XCTAssert(translatedText == "I 😍 😺 and 🐶.")
     }
 
     func testPerformanceExample() {

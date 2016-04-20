@@ -22,6 +22,10 @@ class Tratsch {
     func emoji(forWord word: String) -> Emoji? {
         assert(!word.characters.contains(" "), "Can not handle mutliple words 💔")
 
+        if word.characters.count < 3 {
+            return nil
+        }
+
         for emoji in emojis {
             if emoji.translatable(word) {
                 // Yeah, we found something 💪
@@ -29,13 +33,13 @@ class Tratsch {
             }
 
             // Singular
-            if (word.characters.last == "s") || emoji.translatable(word.removeLastCharacter()) {
+            if word.characters.last == "s" && emoji.translatable(word.dropLast()) {
                 // Yeah, we found something 💪
                 return emoji
             }
 
             // Plural
-            if emoji.translatable(word + "s") {
+            if word.characters.last != "s" && emoji.translatable(word + "s") {
                 // Yeah, we found something 💪
                 return emoji
             }
@@ -50,11 +54,29 @@ class Tratsch {
         let words = text.characters.split(" ").map(String.init)
 
         for word in words {
+            var lastSymbol:  Character?
+            var symbolFreeWord = word
 
-            if let emoji = emoji(forWord: word) {
+            for symbol in symbols.characters {
+                if let firstChar = word.characters.first where firstChar == symbol {
+                    symbolFreeWord = word.dropFirst()
+                    translatedText.append(symbol)
+                }
+
+                if let lastChar = word.characters.last where lastChar == symbol {
+                    lastSymbol = symbol
+                    symbolFreeWord = word.dropLast()
+                }
+            }
+
+            if let emoji = emoji(forWord: symbolFreeWord) {
                 translatedText.appendContentsOf(emoji.unicode)
             } else {
-                translatedText.appendContentsOf(word)
+                translatedText.appendContentsOf(symbolFreeWord)
+            }
+
+            if lastSymbol != nil {
+                translatedText.append(lastSymbol!)
             }
 
             if word != words.last {
