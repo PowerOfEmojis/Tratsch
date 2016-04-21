@@ -12,6 +12,7 @@
 - [ ] Multi Language Support 🇩🇪 🇺🇸
 - [ ] Universal 🖥 📱 ⌚️ 💻 
 - [x] Add Travis CI 🔧
+- [ ] Distribution 🏬
 
 #### Projects ℹ️
 - Twitter's [Twemoji](https://github.com/twitter/twemoji)
