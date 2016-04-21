@@ -18,3 +18,6 @@
 - Twitter's [Twemoji](https://github.com/twitter/twemoji)
 - Muan's [Emojilib](https://github.com/muan/emojilib)
 - Our own [get-em-all](https://github.com/PowerOfEmojis/get-em-all)
+
+#### Copyrights ©️
+Logo is based on the amazing [Twemojis](https://github.com/twitter/twemoji) 🐣
