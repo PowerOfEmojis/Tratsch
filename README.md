@@ -5,3 +5,4 @@ Todo:
 - [x] Naive punctuation
 - [ ] Punctuation without following spaces ❓ ❗ 💯
 - [ ] Multi Language Support 🇩🇪 🇺🇸
+- [ ] Universal 🖥 📱 ⌚️ 💻
