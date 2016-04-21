@@ -1,3 +1,6 @@
+![Logo](https://raw.githubusercontent.com/PowerOfEmojis/Tratsch/gh-pages/images/logo_512px.png "Logo Tratsch")
+
+
 **Tratsch** is german and means "aimless chatting". 💬
 
 #### Status
